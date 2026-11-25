@@ -11,8 +11,7 @@ from ultralytics import YOLO
 # MODEL CONFIGURATION
 # ==============================
 
-MODEL_PATH = r"C:\HANA\NTI\OLD_parking counter\parking_counter.pt"
-
+MODEL_PATH = r"parking_counter.pt"
 
 # ==============================
 # PAGE CONFIGURATION
