@@ -19,7 +19,7 @@
 
 > **Replace this section with your own video** (see [How to add a video](#-how-to-add-a-video-to-this-readme) below).
 
-https://github.com/YOUR_USERNAME/YOUR_REPO/assets/REPLACE_WITH_YOUR_VIDEO_ID
+[https://github.com/YOUR_USERNAME/YOUR_REPO/assets/REPLACE_WITH_YOUR_VIDEO_ID](https://github.com/hanaahmedd/park_counter_space/blob/main/assets/Demo.mp4)
 
 <!-- Optional: a GIF preview that plays inline everywhere -->
 <!-- ![ParkVision Demo](assets/demo.gif) -->
