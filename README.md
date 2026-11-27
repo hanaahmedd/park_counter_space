@@ -6,23 +6,13 @@
 
 **Detect. Monitor. Count. Free vs. occupied parking spaces, in real time.**
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/Model-YOLO-00FFFF)
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
-
 </div>
 
 ---
 
 ## 🎬 Demo
 
-> **Replace this section with your own video** (see [How to add a video](#-how-to-add-a-video-to-this-readme) below).
-
-[https://github.com/YOUR_USERNAME/YOUR_REPO/assets/REPLACE_WITH_YOUR_VIDEO_ID](https://github.com/hanaahmedd/park_counter_space/blob/main/assets/Demo.mp4)
-
-<!-- Optional: a GIF preview that plays inline everywhere -->
-<!-- ![ParkVision Demo](assets/demo.gif) -->
+https://github.com/user-attachments/assets/113aa250-6f1b-476b-8b96-5abbdfa2df28
 
 ---
 
@@ -46,7 +36,7 @@ A custom-trained **YOLO** model detects each parking space and classifies its st
 ## 🧠 How It Works
 
 1. The user uploads a parking image or video.
-2. The YOLO model runs on each frame (confidence threshold `0.25`).
+2. The YOLO model runs on each frame.
 3. Detections are split by class:
 
    | Class ID | Meaning |
@@ -72,7 +62,7 @@ ParkVision/
 ├── parkvision_app.py        # Streamlit application
 ├── parking_counter.pt       # Trained YOLO model weights
 ├── requirements.txt         # Python dependencies
-├── assets/                  # Screenshots / demo GIF (optional)
+├── assets/                  # Screenshots / demo 
 └── README.md
 ```
 
@@ -81,7 +71,7 @@ ParkVision/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/hanaahmedd/park_counter_space.git
 cd YOUR_REPO
 ```
 
@@ -114,11 +104,11 @@ numpy
 
 ### 4. Set the model path
 
-Open `parkvision_app.py` and edit `MODEL_PATH` so it points to your weights file:
+Open `app.py` and edit `MODEL_PATH` so it points to your weights file:
 
 ```python
 # Original (absolute Windows path)
-MODEL_PATH = r"C:\HANA\NTI\OLD_parking counter\parking_counter.pt"
+MODEL_PATH = r"YOUR PATH/parking_counter.pt"
 
 # Recommended when the .pt file sits next to the script
 MODEL_PATH = "parking_counter.pt"
@@ -127,7 +117,7 @@ MODEL_PATH = "parking_counter.pt"
 ### 5. Run the app
 
 ```bash
-streamlit run parkvision_app.py
+streamlit run app.py
 ```
 
 Then open the local URL shown in the terminal (usually `http://localhost:8501`).
@@ -141,60 +131,20 @@ Then open the local URL shown in the terminal (usually `http://localhost:8501`).
 
 ## 📸 Screenshots
 
-| Dashboard | Detection Result |
-|:---------:|:----------------:|
-| ![Dashboard](assets/dashboard.png) | ![Detection](assets/detection.png) |
+#Dashboard of Demo
 
-> Add your own screenshots to the `assets/` folder and update the file names above.
+<img width="1531" height="625" alt="dashboard of demo" src="https://github.com/user-attachments/assets/7e0ff38c-5e7b-4654-b237-04944d3aade7" />
 
-## 🎥 How to Add a Video to This README
+#Test Image
 
-GitHub READMEs can play videos, but **a relative path like `assets/demo.mp4` will not play inline**. Use one of these options:
+<img width="1337" height="725" alt="demo_image" src="https://github.com/user-attachments/assets/ec1ec03b-6e5d-4ffb-a730-706eb607f36c" />
 
-**Option 1: Upload directly to GitHub (best)**
-1. Open your repo on GitHub and click the ✏️ pencil icon to edit `README.md`.
-2. **Drag and drop** your `.mp4` or `.mov` file (max 100 MB on a free account) into the editor.
-3. GitHub inserts a link like `https://github.com/user/repo/assets/12345/abcd-...`.
-4. Keep that link on its own line. It renders as a playable video. Commit the change.
-
-**Option 2: Use a GIF (works everywhere)**
-1. Convert your demo to a short GIF (for example with ScreenToGif, or `ffmpeg`).
-2. Save it as `assets/demo.gif` and use:
-   ```markdown
-   ![ParkVision Demo](assets/demo.gif)
-   ```
-
-**Option 3: YouTube link with a thumbnail**
-```markdown
-[![Watch the demo](assets/thumbnail.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-```
-
-## ⚠️ Notes
-
-- Model weight files can be large. GitHub blocks files over **100 MB**, so use [Git LFS](https://git-lfs.com/) or attach the `.pt` file to a **GitHub Release** if needed.
-- A GPU is not required, but it makes video processing noticeably faster.
-- Detection quality depends on camera angle, lighting, and how similar the footage is to the training data.
-
-## 🔮 Future Improvements
-
-- Live webcam / RTSP stream support
-- Occupancy percentage and history charts
-- Export of results to CSV
-- Multi-lot dashboard
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome. Feel free to open an issue or submit a pull request.
-
-## 📄 License
-
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/YOUR_PROFILE)
+- GitHub: [@hanaahmedd](https://github.com/hanaahmedd)
+- LinkedIn: [Hana Ahmed](https://www.linkedin.com/in/hana-ahmed1/)
 
 ---
 
